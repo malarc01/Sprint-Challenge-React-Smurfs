@@ -15,7 +15,7 @@ class SmurfForm extends Component {
     console.log('addSmurf function invoked');
     let smurfObject={
       name:this.state.name,
-      age: this.state.age,
+      age: parseInt(this.state.age, 10),
       height: this.state.height
     }
     axios.post('http://localhost:3333/smurfs',smurfObject)
